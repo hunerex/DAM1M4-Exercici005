@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pàgina 1 · Transicions</title>
+  <link rel="stylesheet" href="estils.css">
+  <!-- Fonts + Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+</head>
+<body>
+
+  <!-- 🔹 Navbar sticky con efecto glass -->
+  <header class="p1-navbar">
+  <div class="p1-navbar__inner">
+    <!-- Brand -->
+    <div class="p1-navbar__brand">
+      <span class="material-icons-outlined">layers</span>
+      <span>DAM · Exercici 005</span>
+    </div>
+
+    <!-- Links -->
+    <nav class="p1-navbar__links">
+      <a href="index.html" class="p1-navbar__link p1-navbar__link--active">
+        <span class="material-icons-outlined">home</span> Home
+      </a>
+      <a href="galeria.html" class="p1-navbar__link">
+        <span class="material-icons-outlined">movie</span> Galeria
+      </a>
+      <a href="guia-estil.html" class="p1-navbar__link">
+        <span class="material-icons-outlined">format_size</span> Guia d’estil
+      </a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="p1-hero">
+  <h1 class="p1-hero__title">Explora les Transicions CSS</h1>
+  <p class="p1-hero__subtitle">
+    Aquesta pàgina mostra com les transicions poden donar vida als elements web amb efectes suaus i elegants.
+  </p>
+  <a href="#cards" class="p1-hero__cta">
+    <span class="material-icons-outlined">play_arrow</span>
+    Comença ara
+  </a>
+</section>
+
+
+    <!-- 🔹 Tarjetas interactivas tipo polaroid -->
+   <section id="p1-cards" class="section">
+     <div class="p1-card1">
+     <div class="p1-card1__polaroid">
+        <img src="assets/img/card1.jpg" alt="Circuitos electrónicos" class="p1-card1__photo">
+        <div class="p1-card1__caption">Circuitos electrónicos</div>
+       </div>
+      </div>
+    </div>
+
+        <!-- Tarjeta 2: Luces neón futuristas -->
+    <div class="p1-card2">
+      <div class="p1-card2__polaroid">
+        <img src="assets/img/card2.jpg" alt="Luces neón futuristas" class="p1-card2__photo">
+        <div class="p1-card2__caption">Luces neón futuristas</div>
+      </div>
+    </div>
+
+
+        <!-- Tarjeta 3: Tecnología abstracta -->
+    <div class="p1-card3">
+    <div class="p1-card3__polaroid">
+        <!-- Imagen frontal -->
+        <img src="assets/img/card3a.jpg" alt="Tecnología abstracta" class="p1-card3__photo is-front">
+        <!-- Imagen trasera -->
+        <img src="assets/img/card3b.jpg" alt="Tecnología abstracta alternativa" class="p1-card3__photo is-back">
+        <div class="p1-card3__caption">Tecnología abstracta</div>
+    </div>
+    </div>
+
+    <!-- 🔹 Menú secundario con transiciones -->
+    <section class="section">
+    <nav class="p1-menu">
+        <a href="#" class="p1-menu__item">Opció 1</a>
+        <a href="#" class="p1-menu__item">Opció 2</a>
+        <a href="#" class="p1-menu__item">Opció 3</a>
+    </nav>
+   </section>
+  </main>
+</body>
+</html>
+
+
+

@@ -1,0 +1,289 @@
+
+/* -------- Página 1: Navbar -------- */
+.p1-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(212, 35, 35, 0.1);
+}
+
+.p1-navbar__inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.p1-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.p1-navbar__brand .material-icons-outlined {
+  font-variation-settings: "OPSZ" 24, "wght" 400;
+  color: #3d7bff;
+}
+
+.p1-navbar__links {
+  display: flex;
+  gap: 8px;
+}
+
+.p1-navbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #eee;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease, background 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.p1-navbar__link:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  letter-spacing: 0.4px;
+}
+
+.p1-navbar__link--active {
+  background: rgba(61,123,255,0.18);
+  color: #fff;
+}
+
+.p1-navbar__link .material-icons-outlined {
+  font-size: 20px;
+  line-height: 1;
+  font-variation-settings: "OPSZ" 20, "wght" 400;
+}
+
+
+/* -------- Página 1: Hero -------- */
+.p1-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #3d7bff, #764ba2);
+  color: #fff;
+  max-width: 1100px;
+  margin: 32px auto;
+}
+
+.p1-hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.p1-hero__subtitle {
+  font-family: "Roboto", sans-serif;
+  color: rgba(255,255,255,0.85);
+  max-width: 65ch;
+  line-height: 1.6;
+}
+
+.p1-hero__cta {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.p1-hero__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.25);
+}
+
+.p1-hero__cta .material-icons-outlined {
+  font-size: 22px;
+  font-variation-settings: "OPSZ" 22, "wght" 500;
+}
+
+/* -------- Página 1: Card 1 -------- */
+.p1-card1 {
+  flex: 1 1 300px;
+  max-width: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  transition: transform 0.5s linear; /* transición linear */
+}
+
+.p1-card1__polaroid {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  padding: 16px 16px 40px;
+  position: relative;
+  height: 100%;
+}
+
+.p1-card1__photo {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.p1-card1__caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover con escala constante */
+.p1-card1:hover {
+  transform: scale(1.08);
+}
+
+
+/* -------- Página 1: Card 2 -------- */
+.p1-card2 {
+  flex: 1 1 300px;
+  max-width: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  transition: background 0.5s ease, box-shadow 0.5s ease; /* transición ease */
+}
+
+.p1-card2__polaroid {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  padding: 16px 16px 40px;
+  position: relative;
+  height: 100%;
+}
+
+.p1-card2__photo {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.p1-card2__caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover con cambio de color y sombra más intensa */
+.p1-card2:hover {
+  background: rgba(61,123,255,0.25); /* azul translúcido */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+
+/* -------- Página 1: Card 3 -------- */
+.p1-card3 {
+  flex: 1 1 300px;
+  max-width: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  transition: transform 0.6s ease-in-out; /* transición ease-in-out */
+}
+
+.p1-card3__polaroid {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  padding: 16px 16px 40px;
+  position: relative;
+  height: 100%;
+}
+
+.p1-card3__photo {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Imagen trasera superpuesta */
+.p1-card3__photo.is-back {
+  position: absolute;
+  inset: 16px 16px 40px 16px; /* mismo padding que el polaroid */
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 2;
+}
+
+.p1-card3__caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover con escala + ligera rotación */
+.p1-card3:hover {
+  transform: scale(1.05) rotateZ(-2deg);
+}
+
+/* Hover: aparece la segunda imagen */
+.p1-card3:hover .p1-card3__photo.is-back {
+  opacity: 1;
+}
+
+
+/* -------- Página 1: Menú secundario -------- */
+.p1-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.p1-menu__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #888; /* gris inicial */
+  text-decoration: none;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.p1-menu__item:hover {
+  color: #3d7bff; /* azul acento */
+  letter-spacing: 1px;
+}
