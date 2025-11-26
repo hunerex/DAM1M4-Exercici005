@@ -44,7 +44,7 @@
     <p class="p1-hero__subtitle">
         Aquesta pàgina mostra com les transicions poden donar vida als elements web amb efectes suaus i elegants.
     </p>
-    <a href="#cards" class="p1-hero__cta">
+    <a href="#p1-cards" class="p1-hero__cta">
         <span class="material-icons-outlined">play_arrow</span>
         Comença ara
     </a>
@@ -52,13 +52,13 @@
 
     <!-- 🔹 Tarjetas interactivas tipo polaroid -->
     <section id="p1-cards" class="p1-cards__wrapper">
-     <div class="p1-card1">
-     <div class="p1-card1__polaroid">
-        <img src="assets/img/card1.jpg" alt="Circuitos electrónicos" class="p1-card1__photo">
-        <div class="p1-card1__caption">Circuitos electrónicos</div>
-       </div>
-      </div>
-    </div>
+<!-- Card 1 animada -->
+<div class="p1-card1">
+  <div class="p1-card1__box">
+    <span class="p1-card1__caption">Animació dinàmica</span>
+  </div>
+</div>
+
 
         <!-- Tarjeta 2: Luces neón futuristas -->
     <div class="p1-card2">
@@ -69,16 +69,20 @@
     </div>
 
 
-        <!-- Tarjeta 3: Tecnología abstracta -->
-    <div class="p1-card3">
-    <div class="p1-card3__polaroid">
-        <!-- Imagen frontal -->
-        <img src="assets/img/card3a.jpg" alt="Tecnología abstracta" class="p1-card3__photo is-front">
-        <!-- Imagen trasera -->
-        <img src="assets/img/card3b.jpg" alt="Tecnología abstracta alternativa" class="p1-card3__photo is-back">
-        <div class="p1-card3__caption">Tecnología abstracta</div>
+
+<!-- Tarjeta 3: Tecnología abstracta -->
+<div class="p1-card3">
+  <div class="p1-card3__polaroid">
+
+    <div class="p1-card3__img-wrap">
+      <img src="assets/img/card3a.jpg" alt="Tecnología abstracta" class="p1-card3__photo base">
+      <img src="assets/img/card3b.jpg" alt="Tecnología abstracta hover" class="p1-card3__photo hover">
     </div>
-    </div>
+
+    <div class="p1-card3__caption">Tecnología abstracta</div>
+  </div>
+</div>
+
 
     <!-- 🔹 Menú secundario con transiciones -->
     <section class="section">

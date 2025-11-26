@@ -138,48 +138,46 @@
 }
 
 /* -------- Página 1: Card 1 -------- */
+/* Card 1 contenedor */
 .p1-card1 {
   flex: 1 1 300px;
-  max-width: 340px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+/* Bloque animado */
+.p1-card1__box {
+  background: linear-gradient(135deg, #667eea, #764ba2);
   border-radius: 12px;
-  overflow: hidden;
-  background: rgba(255,255,255,0.08);
-  position: relative;
-  transition: transform 0.5s linear; /* transición linear */
-}
-
-.p1-card1__polaroid {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
-  padding: 16px 16px 40px;
-  position: relative;
-  height: 100%;
-}
-
-.p1-card1__photo {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-}
-
-.p1-card1__caption {
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  right: 0;
-  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
-  color: #333;
+  height: 160px;
+  width: 160px;
+  transition: transform 0.8s ease-in-out, background 0.8s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Hover con escala constante */
-.p1-card1:hover {
-  transform: scale(1.08);
+/* Texto dentro */
+.p1-card1__caption {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Hover: rotación + escala + cambio de color */
+.p1-card1__box:hover {
+  transform: rotateY(180deg) scale(1.2);
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
 }
 
 
 /* -------- Página 1: Card 2 -------- */
+
 .p1-card2 {
   flex: 1 1 300px;
   max-width: 340px;
@@ -187,7 +185,13 @@
   overflow: hidden;
   background: rgba(255,255,255,0.08);
   position: relative;
-  transition: background 0.5s ease, box-shadow 0.5s ease; /* transición ease */
+
+  /* Actualizamos tu transición a la curva Material */
+  transition: 
+    background 420ms cubic-bezier(0.4,0,0.2,1),
+    box-shadow 420ms cubic-bezier(0.4,0,0.2,1),
+    transform 420ms cubic-bezier(0.4,0,0.2,1),
+    filter 420ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .p1-card2__polaroid {
@@ -203,6 +207,10 @@
   width: 100%;
   border-radius: 8px;
   display: block;
+
+  /* Suaviza la aparición de la foto en hover */
+  transition: transform 420ms cubic-bezier(0.4,0,0.2,1), 
+              filter 420ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .p1-card2__caption {
@@ -215,13 +223,23 @@
   color: #333;
 }
 
-/* Hover con cambio de color y sombra más intensa */
+/* ---------- Hover con efecto neón ---------- */
 .p1-card2:hover {
-  background: rgba(61,123,255,0.25); /* azul translúcido */
-  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  background: rgba(61,123,255,0.25); /* azul neón translúcido */
+  box-shadow: 0 16px 32px rgba(0,0,0,0.45);
+  transform: translateY(-6px) scale(1.04);
+  filter: saturate(1.12) contrast(1.05);
+}
+
+/* Efecto en la imagen al hacer hover */
+.p1-card2:hover .p1-card2__photo {
+  transform: scale(1.05);
+  filter: brightness(1.1) contrast(1.08);
 }
 
 
+
+/* -------- Página 1: Card 3 -------- */
 /* -------- Página 1: Card 3 -------- */
 .p1-card3 {
   flex: 1 1 300px;
@@ -230,7 +248,13 @@
   overflow: hidden;
   background: rgba(255,255,255,0.08);
   position: relative;
-  transition: transform 0.6s ease-in-out; /* transición ease-in-out */
+
+  /* timing function: ease-out */
+  transition: 
+    background 350ms ease-out,
+    box-shadow 350ms ease-out,
+    transform 350ms ease-out,
+    filter 350ms ease-out;
 }
 
 .p1-card3__polaroid {
@@ -242,22 +266,34 @@
   height: 100%;
 }
 
-.p1-card3__photo {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
+/* ---- IMG WRAPPER para el crossfade ---- */
+.p1-card3__img-wrap {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Imagen trasera superpuesta */
-.p1-card3__photo.is-back {
+/* Imagen base */
+.p1-card3__photo.base {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 350ms ease-out;
+  opacity: 1;
+}
+
+/* Imagen hover (arriba, invisible al inicio) */
+.p1-card3__photo.hover {
   position: absolute;
-  inset: 16px 16px 40px 16px; /* mismo padding que el polaroid */
-  border-radius: 8px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-  z-index: 2;
+  transition: opacity 350ms ease-out;
 }
 
 .p1-card3__caption {
@@ -270,16 +306,22 @@
   color: #333;
 }
 
-/* Hover con escala + ligera rotación */
+/* ---------- Hover completo ---------- */
 .p1-card3:hover {
-  transform: scale(1.05) rotateZ(-2deg);
+  background: rgba(0, 193, 255, 0.22); /* cian suave */
+  box-shadow: 0 16px 32px rgba(0,0,0,0.40);
+  transform: translateY(-5px) scale(1.03);
+  filter: brightness(1.12) saturate(1.08);
 }
 
-/* Hover: aparece la segunda imagen */
-.p1-card3:hover .p1-card3__photo.is-back {
+/* Crossfade del hover */
+.p1-card3:hover .p1-card3__photo.base {
+  opacity: 0;
+}
+
+.p1-card3:hover .p1-card3__photo.hover {
   opacity: 1;
 }
-
 
 /* -------- Página 1: Menú secundario -------- */
 .p1-menu {
@@ -301,6 +343,11 @@
   color: #3d7bff; /* azul acento */
   letter-spacing: 1px;
 }
+
+
+
+
+
 
 /* -------- Página 1: Cards wrapper -------- */
 .p1-cards__wrapper {
