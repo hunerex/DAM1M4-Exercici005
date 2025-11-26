@@ -1,4 +1,12 @@
 
+/* Pagina principal */
+body {
+  background: linear-gradient(to bottom, #5675ca, #688ec7);
+  color: #fff;
+}
+
+
+
 /* -------- Página 1: Navbar -------- */
 .p1-navbar {
   position: sticky;
