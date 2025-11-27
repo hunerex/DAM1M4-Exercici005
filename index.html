@@ -13,88 +13,223 @@
 </head>
 <body class="p1-page">
 
-
-  <!-- 🔹 Navbar sticky con efecto glass -->
+  <!-- Navbar actualitzat amb millor disseny -->
   <header class="p1-navbar">
-  <div class="p1-navbar__inner">
-    <!-- Brand -->
-    <div class="p1-navbar__brand">
-      <span class="material-icons-outlined">layers</span>
-      <span>DAM · Exercici 005</span>
-    </div>
+    <div class="p1-navbar__inner">
+      <div class="p1-navbar__brand">
+        <span class="material-icons-outlined">layers</span>
+        <span>DAM · Exercici 005</span>
+      </div>
 
-    <!-- Links -->
-    <nav class="p1-navbar__links">
+      <nav class="p1-navbar__links">
         <a href="index.html" class="p1-navbar__link p1-navbar__link--active">
-         <span class="material-icons-outlined">home</span> Home
+          <span class="material-icons-outlined">home</span> Home
         </a>
         <a href="galeria.html" class="p1-navbar__link">
           <span class="material-icons-outlined">movie</span> Galeria
-         </a>
-        <a href="guia-estil.html" class="p1-navbar__link">
-            <span class="material-icons-outlined">format_size</span> Guia d’estil
         </a>
-     </nav>
+        <a href="guia-estil.html" class="p1-navbar__link">
+          <span class="material-icons-outlined">format_size</span> Guia d'estil
+        </a>
+      </nav>
     </div>
-    </header>
+  </header>
 
-    <main class="container">
-        <section class="p1-hero">
-    <h1 class="p1-hero__title">Explora les Transicions CSS</h1>
-    <p class="p1-hero__subtitle">
-        Aquesta pàgina mostra com les transicions poden donar vida als elements web amb efectes suaus i elegants.
-    </p>
-    <a href="#p1-cards" class="p1-hero__cta">
-        <span class="material-icons-outlined">play_arrow</span>
-        Comença ara
-    </a>
+  <main class="container">
+    <!-- Hero més impactant amb millor disseny -->
+    <section class="p1-hero">
+      <div class="p1-hero__badge">
+        <span class="material-icons-outlined">auto_awesome</span>
+        Transicions CSS Avançades
+      </div>
+      <h1 class="p1-hero__title">Descobreix el Poder de les Transicions</h1>
+      <p class="p1-hero__subtitle">
+        Explora com les transicions CSS poden transformar elements estàtics en experiències interactives fluides. 
+        Cada targeta utilitza diferents timing-functions i propietats per demostrar la versatilitat de les transicions.
+      </p>
+      <div class="p1-hero__buttons">
+        <a href="#p1-cards" class="p1-hero__cta p1-hero__cta--primary">
+          <span class="material-icons-outlined">play_arrow</span>
+          Explorar transicions
+        </a>
+        <a href="#p1-menu" class="p1-hero__cta p1-hero__cta--secondary">
+          <span class="material-icons-outlined">info</span>
+          Més informació
+        </a>
+      </div>
     </section>
 
-    <!-- 🔹 Tarjetas interactivas tipo polaroid -->
-    <section id="p1-cards" class="p1-cards__wrapper">
-<!-- Card 1 animada -->
-<div class="p1-card1">
-  <div class="p1-card1__box">
-    <span class="p1-card1__caption">Animació dinàmica</span>
-  </div>
-</div>
+    <!-- Secció de targetes completament redissenyada amb 6 targetes interactives -->
+    <section id="p1-cards" class="p1-section">
+      <h2 class="p1-section__title">Targetes amb Diferents Timing Functions</h2>
+      <p class="p1-section__desc">Passa el cursor per sobre de cada targeta per veure diferents efectes de transició</p>
+      
+      <div class="p1-cards__grid">
+        
+        <!-- Card 1: ease-in-out amb rotació 3D i flip -->
+        <div class="p1-card p1-card--flip">
+          <div class="p1-card__inner">
+            <div class="p1-card__front">
+              <div class="p1-card__icon">
+                <span class="material-icons-outlined">360</span>
+              </div>
+              <h3>ease-in-out</h3>
+              <p>Rotació 3D</p>
+              <div class="p1-card__badge">0.8s</div>
+            </div>
+            <div class="p1-card__back">
+              <h3>Rotació Completa</h3>
+              <p>Aquesta targeta fa servir <code>rotateY(180deg)</code> amb timing ease-in-out per una transició suau</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 2: cubic-bezier Material Design -->
+        <div class="p1-card p1-card--lift">
+          <div class="p1-card__image-wrap">
+            <img src="/placeholder.svg?height=200&width=300" alt="Gradient modern" class="p1-card__image">
+          </div>
+          <div class="p1-card__content">
+            <div class="p1-card__icon">
+              <span class="material-icons-outlined">trending_up</span>
+            </div>
+            <h3>cubic-bezier</h3>
+            <p>Material Design</p>
+            <div class="p1-card__badge">0.42s</div>
+          </div>
+        </div>
 
-        <!-- Tarjeta 2: Luces neón futuristas -->
-    <div class="p1-card2">
-      <div class="p1-card2__polaroid">
-        <img src="assets/img/card2.jpg" alt="Luces neón futuristas" class="p1-card2__photo">
-        <div class="p1-card2__caption">Luces neón futuristas</div>
+        <!-- Card 3: ease-out amb crossfade d'imatges -->
+        <div class="p1-card p1-card--crossfade">
+          <div class="p1-card__image-stack">
+            <img src="/placeholder.svg?height=200&width=300" alt="Abstract 1" class="p1-card__img-base">
+            <img src="/placeholder.svg?height=200&width=300" alt="Abstract 2" class="p1-card__img-hover">
+          </div>
+          <div class="p1-card__content">
+            <div class="p1-card__icon">
+              <span class="material-icons-outlined">image</span>
+            </div>
+            <h3>ease-out</h3>
+            <p>Crossfade d'imatges</p>
+            <div class="p1-card__badge">0.35s</div>
+          </div>
+        </div>
+
+        <!-- Card 4: linear amb escala i ombra -->
+        <div class="p1-card p1-card--scale">
+          <div class="p1-card__glow"></div>
+          <div class="p1-card__content">
+            <div class="p1-card__icon">
+              <span class="material-icons-outlined">zoom_out_map</span>
+            </div>
+            <h3>linear</h3>
+            <p>Escala constant</p>
+            <div class="p1-card__badge">0.3s</div>
+          </div>
+        </div>
+
+        <!-- Card 5: ease-in amb color i blur -->
+        <div class="p1-card p1-card--blur">
+          <div class="p1-card__gradient"></div>
+          <div class="p1-card__content">
+            <div class="p1-card__icon">
+              <span class="material-icons-outlined">blur_on</span>
+            </div>
+            <h3>ease-in</h3>
+            <p>Blur i saturació</p>
+            <div class="p1-card__badge">0.5s</div>
+          </div>
+        </div>
+
+        <!-- Card 6: steps amb animació discreta -->
+        <div class="p1-card p1-card--steps">
+          <div class="p1-card__content">
+            <div class="p1-card__icon p1-card__icon--animated">
+              <span class="material-icons-outlined">stairs</span>
+            </div>
+            <h3>steps(4)</h3>
+            <p>Transició discreta</p>
+            <div class="p1-card__badge">0.6s</div>
+          </div>
+          <div class="p1-card__progress"></div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
+    <!-- Menú secundari millorat amb icones i millors efectes -->
+    <section id="p1-menu" class="p1-section">
+      <h2 class="p1-section__title">Funcions de Temporització CSS</h2>
+      <p class="p1-section__desc">Navega per les diferents opcions de timing-function disponibles</p>
+      
+      <nav class="p1-menu">
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">show_chart</span>
+          <span class="p1-menu__label">Linear</span>
+          <span class="p1-menu__desc">Velocitat constant</span>
+        </a>
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">waves</span>
+          <span class="p1-menu__label">Ease</span>
+          <span class="p1-menu__desc">Natural i suau</span>
+        </a>
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">trending_up</span>
+          <span class="p1-menu__label">Ease-in</span>
+          <span class="p1-menu__desc">Inici lent</span>
+        </a>
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">trending_down</span>
+          <span class="p1-menu__label">Ease-out</span>
+          <span class="p1-menu__desc">Final lent</span>
+        </a>
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">timeline</span>
+          <span class="p1-menu__label">Ease-in-out</span>
+          <span class="p1-menu__desc">Lent als extrems</span>
+        </a>
+        <a href="#" class="p1-menu__item">
+          <span class="material-icons-outlined">tune</span>
+          <span class="p1-menu__label">Cubic-bezier</span>
+          <span class="p1-menu__desc">Personalitzat</span>
+        </a>
+      </nav>
+    </section>
 
+    <!-- Nova secció amb botons interactius -->
+    <section class="p1-section">
+      <h2 class="p1-section__title">Botons amb Transicions</h2>
+      <p class="p1-section__desc">Exemples de botons amb diferents efectes de transició</p>
+      
+      <div class="p1-buttons">
+        <button class="p1-btn p1-btn--primary">
+          <span class="material-icons-outlined">send</span>
+          Enviar missatge
+        </button>
+        <button class="p1-btn p1-btn--secondary">
+          <span class="material-icons-outlined">download</span>
+          Descarregar
+        </button>
+        <button class="p1-btn p1-btn--outline">
+          <span class="material-icons-outlined">favorite</span>
+          M'agrada
+        </button>
+        <button class="p1-btn p1-btn--ghost">
+          <span class="material-icons-outlined">share</span>
+          Compartir
+        </button>
+      </div>
+    </section>
 
-<!-- Tarjeta 3: Tecnología abstracta -->
-<div class="p1-card3">
-  <div class="p1-card3__polaroid">
-
-    <div class="p1-card3__img-wrap">
-      <img src="assets/img/card3a.jpg" alt="Tecnología abstracta" class="p1-card3__photo base">
-      <img src="assets/img/card3b.jpg" alt="Tecnología abstracta hover" class="p1-card3__photo hover">
-    </div>
-
-    <div class="p1-card3__caption">Tecnología abstracta</div>
-  </div>
-</div>
-
-
-    <!-- 🔹 Menú secundario con transiciones -->
-    <section class="section">
-    <nav class="p1-menu">
-        <a href="#" class="p1-menu__item">Opció 1</a>
-        <a href="#" class="p1-menu__item">Opció 2</a>
-        <a href="#" class="p1-menu__item">Opció 3</a>
-    </nav>
-   </section>
   </main>
+
+  <footer class="p1-footer">
+    <p>DAM1M04 - Exercici 005 · Transicions CSS · 2025</p>
+  </footer>
+
 </body>
 </html>
+
 
 
 

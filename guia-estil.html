@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pàgina 3 · Guia d’estil</title>
+  <title>Pàgina 3 · Guia d'estil</title>
   <link rel="stylesheet" href="estils.css">
   <!-- Fonts + Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,40 +22,249 @@
       <nav class="navlinks">
         <a href="index.html"><span class="material-icons-outlined">home</span>Home</a>
         <a href="galeria.html"><span class="material-icons-outlined">movie</span>Galeria</a>
-        <a href="guia-estil.html" class="active"><span class="material-icons-outlined">format_size</span>Guia d’estil</a>
+        <a href="guia-estil.html" class="active"><span class="material-icons-outlined">format_size</span>Guia d'estil</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <h1>Guia d’estil: tipografia i icones</h1>
-      <p class="muted">Mostrari de fonts (H1-H3, paràgrafs), baseline con iconos, escala tipogràfica, Material Icons con variaciones y tabla de colores.</p>
+      <h1>Guia d'estil: tipografia i icones</h1>
+      <p class="muted">Mostrari complet de fonts (Google Fonts amb múltiples pesos), alineació baseline amb Material Icons, escala tipogràfica en rem, variacions d'icones i paleta de colors completa.</p>
     </section>
 
-    <section class="section">
-      <!-- Mostrario tipográfico: H1-H3, párrafos con font-family, weights (≥3), line-height, letter-spacing -->
+    <!-- MOSTRARIO TIPOGRÁFICO -->
+    <section class="section typo-showcase">
+      <h2 style="text-align: center; margin-bottom: 40px;">Mostrari Tipogràfic</h2>
+      
+      <h1>Títol H1 - Montserrat ExtraBold 800</h1>
+      <p style="color: #888; font-size: 0.9rem; margin-bottom: 24px;">font-size: 3rem, line-height: 1.2, letter-spacing: -0.5px</p>
+      
+      <h2>Títol H2 - Montserrat Bold 700</h2>
+      <p style="color: #888; font-size: 0.9rem; margin-bottom: 24px;">font-size: 2.5rem, line-height: 1.3, letter-spacing: -0.3px</p>
+      
+      <h3>Títol H3 - Montserrat Bold 700</h3>
+      <p style="color: #888; font-size: 0.9rem; margin-bottom: 32px;">font-size: 2rem, line-height: 1.4, letter-spacing: 0</p>
+
+      <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 16px;">Pesos de Roboto (body text):</h4>
+      
+      <p class="weight-light">Aquest és un paràgraf amb Roboto Light (300). Ideal per textos llargs i llegibles amb un aspecte elegant i modern.</p>
+      
+      <p class="weight-regular">Aquest és un paràgraf amb Roboto Regular (400). És el pes estàndard per a cos de text, amb bona legibilitat i contrast.</p>
+      
+      <p class="weight-medium">Aquest és un paràgraf amb Roboto Medium (500). Perfecte per destacar fragments sense arribar a bold, mantenint llegibilitat.</p>
+      
+      <p class="weight-bold">Aquest és un paràgraf amb Roboto Bold (700). S'utilitza per èmfasi fort o per destacar informació crítica dins del text.</p>
     </section>
 
+    <!-- BASELINE ALIGNMENT -->
     <section class="section">
-      <!-- Baseline alignment: texto + iconos en línea comprobando alineación -->
+      <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Alineació Baseline amb Material Icons</h2>
+      
+      <div class="baseline-demo">
+        <span class="material-icons-outlined">info</span>
+        <span>Les icones i el text s'alineen a la línia base</span>
+      </div>
+
+      <div class="baseline-demo">
+        <span class="material-icons-outlined">check_circle</span>
+        <span>Això millora la consistència visual</span>
+      </div>
+
+      <div class="baseline-demo">
+        <span class="material-icons-outlined">favorite</span>
+        <span>I crea una millor experiència d'usuari</span>
+      </div>
     </section>
 
-    <section class="section">
-      <!-- Escala tipográfica en rem y ejemplos de accesibilidad (contraste, tamaño mínimo) -->
+    <!-- ESCALA TIPOGRÁFICA -->
+    <section class="section type-scale">
+      <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Escala Tipogràfica (rem-based)</h2>
+      
+      <div class="type-scale-item size-xs">
+        <strong>Extra Small (0.75rem / 12px)</strong> - Mínim recomanat per accessibilitat
+      </div>
+      
+      <div class="type-scale-item size-sm">
+        <strong>Small (0.875rem / 14px)</strong> - Textos secundaris i metadades
+      </div>
+      
+      <div class="type-scale-item size-base">
+        <strong>Base (1rem / 16px)</strong> - Mida estàndard per cos de text
+      </div>
+      
+      <div class="type-scale-item size-lg">
+        <strong>Large (1.125rem / 18px)</strong> - Text destacat o introductori
+      </div>
+      
+      <div class="type-scale-item size-xl">
+        <strong>Extra Large (1.25rem / 20px)</strong> - Subtítols petits
+      </div>
+      
+      <div class="type-scale-item size-2xl">
+        <strong>2X Large (1.5rem / 24px)</strong> - Subtítols mitjans
+      </div>
+      
+      <div class="type-scale-item size-3xl">
+        <strong>3X Large (2rem / 32px)</strong> - Títols secundaris
+      </div>
+
+      <p style="margin-top: 24px; padding: 16px; background: rgba(61,123,255,0.08); border-radius: 8px;">
+        <strong>♿ Accessibilitat:</strong> La mida mínima recomanada per a text és 12px (0.75rem). El contrast de color també és essencial: un mínim de 4.5:1 per text normal i 3:1 per text gran (18px+).
+      </p>
     </section>
 
+    <!-- MATERIAL ICONS SHOWCASE -->
     <section class="section">
-      <!-- Material Icons: variaciones (opsz, wght, FILL) con leyenda -->
+      <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 20px;">Variacions de Material Icons</h2>
+      <p style="text-align: center; color: #888; margin-bottom: 40px;">Canvis en opsz (optical size), wght (weight) i FILL</p>
+      
+      <div class="icons-grid">
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-20" style="color: #3d7bff;">home</span>
+          <div class="label">opsz: 20</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-24" style="color: #3d7bff;">home</span>
+          <div class="label">opsz: 24</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32" style="color: #3d7bff;">home</span>
+          <div class="label">opsz: 32</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-48" style="color: #3d7bff;">home</span>
+          <div class="label">opsz: 48</div>
+        </div>
+      </div>
+
+      <div class="icons-grid" style="margin-top: 40px;">
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32 icon-weight-300" style="color: #764ba2;">star</span>
+          <div class="label">wght: 300</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32 icon-weight-400" style="color: #764ba2;">star</span>
+          <div class="label">wght: 400</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32 icon-weight-700" style="color: #764ba2;">star</span>
+          <div class="label">wght: 700</div>
+        </div>
+      </div>
+
+      <div class="icons-grid" style="margin-top: 40px;">
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32 icon-fill-0" style="color: #00c1ff;">favorite</span>
+          <div class="label">FILL: 0 (outlined)</div>
+        </div>
+        
+        <div class="icon-item">
+          <span class="material-icons-outlined icon-size-32 icon-fill-1" style="color: #00c1ff;">favorite</span>
+          <div class="label">FILL: 1 (filled)</div>
+        </div>
+      </div>
     </section>
 
+    <!-- BOTONES CON ICONOS -->
     <section class="section">
-      <!-- Botones/links con icono + texto y transición hover -->
+      <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Botons i Links amb Icones</h2>
+      
+      <div class="buttons-showcase">
+        <a href="#" class="btn-icon">
+          <span class="material-icons-outlined">download</span>
+          Descarregar fitxer
+        </a>
+        
+        <a href="#" class="btn-icon btn-secondary">
+          <span class="material-icons-outlined">upload</span>
+          Pujar contingut
+        </a>
+        
+        <a href="#" class="btn-icon btn-accent">
+          <span class="material-icons-outlined">share</span>
+          Compartir
+        </a>
+        
+        <a href="#" class="btn-icon">
+          <span class="material-icons-outlined">edit</span>
+          Editar
+        </a>
+        
+        <a href="#" class="btn-icon btn-secondary">
+          <span class="material-icons-outlined">delete</span>
+          Eliminar
+        </a>
+      </div>
     </section>
 
+    <!-- TABLA DE COLORES -->
     <section class="section">
-      <!-- Tabla de colores: HEX, RGB, HSL y versión con alpha -->
+      <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Paleta de Colors</h2>
+      
+      <table class="color-table">
+        <thead>
+          <tr>
+            <th>Mostra</th>
+            <th>Nom</th>
+            <th>HEX</th>
+            <th>RGB</th>
+            <th>HSL</th>
+            <th>Amb Alpha (RGBA)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="color-swatch" style="background: #3d7bff;"></span></td>
+            <td><strong>Primary Blue</strong></td>
+            <td><code>#3d7bff</code></td>
+            <td><code>rgb(61, 123, 255)</code></td>
+            <td><code>hsl(221, 100%, 62%)</code></td>
+            <td><code>rgba(61, 123, 255, 0.8)</code></td>
+          </tr>
+          <tr>
+            <td><span class="color-swatch" style="background: #764ba2;"></span></td>
+            <td><strong>Secondary Purple</strong></td>
+            <td><code>#764ba2</code></td>
+            <td><code>rgb(118, 75, 162)</code></td>
+            <td><code>hsl(270, 37%, 46%)</code></td>
+            <td><code>rgba(118, 75, 162, 0.8)</code></td>
+          </tr>
+          <tr>
+            <td><span class="color-swatch" style="background: #00c1ff;"></span></td>
+            <td><strong>Accent Cyan</strong></td>
+            <td><code>#00c1ff</code></td>
+            <td><code>rgb(0, 193, 255)</code></td>
+            <td><code>hsl(195, 100%, 50%)</code></td>
+            <td><code>rgba(0, 193, 255, 0.8)</code></td>
+          </tr>
+          <tr>
+            <td><span class="color-swatch" style="background: #333333;"></span></td>
+            <td><strong>Dark Gray</strong></td>
+            <td><code>#333333</code></td>
+            <td><code>rgb(51, 51, 51)</code></td>
+            <td><code>hsl(0, 0%, 20%)</code></td>
+            <td><code>rgba(51, 51, 51, 0.9)</code></td>
+          </tr>
+          <tr>
+            <td><span class="color-swatch" style="background: #888888;"></span></td>
+            <td><strong>Medium Gray</strong></td>
+            <td><code>#888888</code></td>
+            <td><code>rgb(136, 136, 136)</code></td>
+            <td><code>hsl(0, 0%, 53%)</code></td>
+            <td><code>rgba(136, 136, 136, 0.7)</code></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
+
+    <div style="height: 60px;"></div>
   </main>
+
 </body>
 </html>
