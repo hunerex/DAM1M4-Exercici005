@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,37 +11,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
 </head>
-<body>
+<body class="p2-page">
 
-  <!-- Navbar actualitzat -->
-  <header class="navbar">
-    <div class="inner">
-      <div class="brand">
+  <!-- Navbar actualitzat amb millor disseny coherent -->
+  <header class="p2-navbar">
+    <div class="p2-navbar__inner">
+      <div class="p2-navbar__brand">
         <span class="material-icons-outlined">layers</span>
         <span>DAM · Exercici 005</span>
       </div>
-      <nav class="navlinks">
-        <a href="index.html"><span class="material-icons-outlined">home</span>Home</a>
-        <a href="galeria.html" class="active"><span class="material-icons-outlined">movie</span>Galeria</a>
-        <a href="guia-estil.html"><span class="material-icons-outlined">format_size</span>Guia d'estil</a>
+      <nav class="p2-navbar__links">
+        <a href="index.html" class="p2-navbar__link">
+          <span class="material-icons-outlined">home</span> Home
+        </a>
+        <a href="galeria.html" class="p2-navbar__link p2-navbar__link--active">
+          <span class="material-icons-outlined">movie</span> Galeria
+        </a>
+        <a href="guia-estil.html" class="p2-navbar__link">
+          <span class="material-icons-outlined">format_size</span> Guia d'estil
+        </a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Hero millorat -->
-    <section class="hero">
-      <div class="hero__badge">
+  <!-- Nova escena amb coet orbitant i control toggle -->
+  <div class="p2-space-scene">
+    <div class="p2-stars">
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+      <div class="p2-star"></div>
+    </div>
+    
+    <div class="p2-scene">
+      <div class="p2-planet">
+        <div class="p2-planet-inner"></div>
+      </div>
+      <div class="p2-orbit">
+        <div class="p2-rocket">🚀</div>
+      </div>
+    </div>
+
+    <div class="p2-toggle">
+      <input type="checkbox" id="pauseOrbit" class="p2-hidden" checked />
+      <label for="pauseOrbit" class="p2-wrapper">
+        <span class="p2-labelText">Animació</span>
+        <span class="p2-indicator"></span>
+      </label>
+    </div>
+
+    <div class="p2-hero-content">
+      <div class="p2-hero__badge">
         <span class="material-icons-outlined">auto_awesome</span>
         Animacions CSS amb @keyframes
       </div>
       <h1>Galeria d'Animacions</h1>
-      <p class="muted">Descobreix el poder de les animacions CSS amb @keyframes. Aquesta pàgina inclou loaders, animacions complexes amb múltiples transformacions, efectes de scroll reveal i molt més.</p>
-      <a class="cta" href="#anim"><span class="material-icons-outlined">play_circle</span>Veure animacions</a>
-    </section>
+      <p class="p2-muted">Descobreix el poder de les animacions CSS amb @keyframes. Aquesta pàgina inclou loaders, animacions complexes amb múltiples transformacions, efectes de scroll reveal i molt més.</p>
+      <a class="p2-cta" href="#anim"><span class="material-icons-outlined">play_circle</span>Veure animacions</a>
+    </div>
+  </div>
 
-    <!-- Secció de loaders i animacions complexes millorada -->
+  <main class="container">
+
+    <!-- Secció de loaders i animacions millorada -->
     <section id="anim" class="p2-section">
+      <h2 class="p2-section__title">Loaders i Animacions Complexes</h2>
+      <p class="p2-section__desc">Exemples d'animacions creades només amb CSS utilitzant @keyframes</p>
       
       <div class="p2-grid">
         
@@ -257,3 +298,4 @@
 
 </body>
 </html>
+

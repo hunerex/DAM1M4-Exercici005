@@ -11,30 +11,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
 </head>
-<body>
+<body class="p3-page">
 
-  <header class="navbar">
-    <div class="inner">
-      <div class="brand">
+  <!-- Navbar actualitzat amb disseny coherent -->
+  <header class="p3-navbar">
+    <div class="p3-navbar__inner">
+      <div class="p3-navbar__brand">
         <span class="material-icons-outlined">layers</span>
         <span>DAM · Exercici 005</span>
       </div>
-      <nav class="navlinks">
-        <a href="index.html"><span class="material-icons-outlined">home</span>Home</a>
-        <a href="galeria.html"><span class="material-icons-outlined">movie</span>Galeria</a>
-        <a href="guia-estil.html" class="active"><span class="material-icons-outlined">format_size</span>Guia d'estil</a>
+      <nav class="p3-navbar__links">
+        <a href="index.html" class="p3-navbar__link">
+          <span class="material-icons-outlined">home</span> Home
+        </a>
+        <a href="galeria.html" class="p3-navbar__link">
+          <span class="material-icons-outlined">movie</span> Galeria
+        </a>
+        <a href="guia-estil.html" class="p3-navbar__link p3-navbar__link--active">
+          <span class="material-icons-outlined">format_size</span> Guia d'estil
+        </a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="p3-hero">
+      <div class="p3-hero__badge">
+        <span class="material-icons-outlined">palette</span>
+        Tipografia i Material Icons
+      </div>
       <h1>Guia d'estil: tipografia i icones</h1>
-      <p class="muted">Mostrari complet de fonts (Google Fonts amb múltiples pesos), alineació baseline amb Material Icons, escala tipogràfica en rem, variacions d'icones i paleta de colors completa.</p>
+      <p class="p3-muted">Mostrari complet de fonts (Google Fonts amb múltiples pesos), alineació baseline amb Material Icons, escala tipogràfica en rem, variacions d'icones i paleta de colors completa.</p>
     </section>
 
     <!-- MOSTRARIO TIPOGRÁFICO -->
-    <section class="section typo-showcase">
+    <section class="p3-section typo-showcase">
       <h2 style="text-align: center; margin-bottom: 40px;">Mostrari Tipogràfic</h2>
       
       <h1>Títol H1 - Montserrat ExtraBold 800</h1>
@@ -58,7 +69,7 @@
     </section>
 
     <!-- BASELINE ALIGNMENT -->
-    <section class="section">
+    <section class="p3-section">
       <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Alineació Baseline amb Material Icons</h2>
       
       <div class="baseline-demo">
@@ -78,7 +89,7 @@
     </section>
 
     <!-- ESCALA TIPOGRÁFICA -->
-    <section class="section type-scale">
+    <section class="p3-section type-scale">
       <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Escala Tipogràfica (rem-based)</h2>
       
       <div class="type-scale-item size-xs">
@@ -115,7 +126,7 @@
     </section>
 
     <!-- MATERIAL ICONS SHOWCASE -->
-    <section class="section">
+    <section class="p3-section">
       <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 20px;">Variacions de Material Icons</h2>
       <p style="text-align: center; color: #888; margin-bottom: 40px;">Canvis en opsz (optical size), wght (weight) i FILL</p>
       
@@ -172,7 +183,7 @@
     </section>
 
     <!-- BOTONES CON ICONOS -->
-    <section class="section">
+    <section class="p3-section">
       <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Botons i Links amb Icones</h2>
       
       <div class="buttons-showcase">
@@ -204,7 +215,7 @@
     </section>
 
     <!-- TABLA DE COLORES -->
-    <section class="section">
+    <section class="p3-section">
       <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 40px;">Paleta de Colors</h2>
       
       <table class="color-table">
@@ -265,6 +276,10 @@
 
     <div style="height: 60px;"></div>
   </main>
+
+  <footer class="p3-footer">
+    <p>DAM1M04 - Exercici 005 · Guia d'Estil CSS · 2025</p>
+  </footer>
 
 </body>
 </html>
