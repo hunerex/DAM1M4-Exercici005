@@ -1387,7 +1387,7 @@ body:has(#pauseOrbit:checked) .p2-indicator::after {
   text-align: center;
   max-width: 900px;
   padding: 40px 20px;
-  margin-top: 60vh;
+  margin-top: 0 auto;
 }
 
 .p2-hero__badge {
