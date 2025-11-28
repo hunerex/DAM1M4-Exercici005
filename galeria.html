@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ca" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pàgina 2 · Animacions</title>
+  <title>Página 2 · Animaciones</title>
   <link rel="stylesheet" href="estils.css">
-  <!-- Fonts + Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,106 +12,170 @@
 </head>
 <body class="p2-page">
 
-  <!-- Navbar actualitzat amb millor disseny coherent -->
   <header class="p2-navbar">
     <div class="p2-navbar__inner">
       <div class="p2-navbar__brand">
         <span class="material-icons-outlined">layers</span>
-        <span>DAM · Exercici 005</span>
+        <span class="p2-navbar__brand-text">DAM</span>
       </div>
       <nav class="p2-navbar__links">
         <a href="index.html" class="p2-navbar__link">
-          <span class="material-icons-outlined">home</span> Home
+          <span class="material-icons-outlined">home</span>
+          <span class="p2-navbar__text">Inicio</span>
         </a>
         <a href="galeria.html" class="p2-navbar__link p2-navbar__link--active">
-          <span class="material-icons-outlined">movie</span> Galeria
+          <span class="material-icons-outlined">movie</span>
+          <span class="p2-navbar__text">Galería</span>
         </a>
         <a href="guia-estil.html" class="p2-navbar__link">
-          <span class="material-icons-outlined">format_size</span> Guia d'estil
+          <span class="material-icons-outlined">format_size</span>
+          <span class="p2-navbar__text">Guía</span>
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- Nova escena amb coet orbitant i control toggle -->
-  <div class="p2-space-scene">
-    <div class="p2-stars">
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-      <div class="p2-star"></div>
-    </div>
-    
-    <div class="p2-scene">
-      <div class="p2-planet">
-        <div class="p2-planet-inner"></div>
-      </div>
-      <div class="p2-orbit">
-        <div class="p2-rocket">🚀</div>
-      </div>
-    </div>
-
-    <div class="p2-toggle">
-      <input type="checkbox" id="pauseOrbit" class="p2-hidden" checked />
-      <label for="pauseOrbit" class="p2-wrapper">
-        <span class="p2-labelText">Animació</span>
-        <span class="p2-indicator"></span>
-      </label>
-    </div>
-
+  <div class="p2-hero-section">
     <div class="p2-hero-content">
       <div class="p2-hero__badge">
         <span class="material-icons-outlined">auto_awesome</span>
-        Animacions CSS amb @keyframes
+        Animaciones @keyframes
       </div>
-      <h1>Galeria d'Animacions</h1>
-      <p class="p2-muted">Descobreix el poder de les animacions CSS amb @keyframes. Aquesta pàgina inclou loaders, animacions complexes amb múltiples transformacions, efectes de scroll reveal i molt més.</p>
-      <a class="p2-cta" href="#anim"><span class="material-icons-outlined">play_circle</span>Veure animacions</a>
+      <h1>Galería de Animaciones</h1>
+      <p class="p2-muted">Animaciones CSS con @keyframes, loaders, transformaciones y efectos interactivos.</p>
+      <a class="p2-cta" href="#anim">
+        <span class="material-icons-outlined">play_circle</span>
+        Ver animaciones
+      </a>
     </div>
   </div>
 
   <main class="container">
 
-    <!-- Secció de loaders i animacions millorada -->
+    <!-- Sección de vídeos -->
+    <section class="p2-section">
+      <h2 class="p2-section__title">Galería de Vídeos</h2>
+      <p class="p2-section__desc">Colección de vídeos con efectos CSS al hover</p>
+      
+      <div class="p2-video-grid">
+        <div class="p2-video-card">
+          <div class="p2-video-wrapper">
+            <!-- TODO: AÑADIR TU VÍDEO AQUÍ -->
+            <!-- Pon tu archivo de vídeo en: assets/media/video1.mp4 -->
+            <video controls>
+              <source src="assets/media/video1.mp4" type="video/mp4">
+              Tu navegador no soporta vídeos HTML5.
+            </video>
+          </div>
+          <div class="p2-video-info">
+            <span class="material-icons-outlined">play_circle</span>
+            <div>
+              <h4>Vídeo 1</h4>
+              <p>Ejemplo de animación CSS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p2-video-card">
+          <div class="p2-video-wrapper">
+            <!-- TODO: AÑADIR TU VÍDEO AQUÍ -->
+            <!-- Pon tu archivo de vídeo en: assets/media/video2.mp4 -->
+            <video controls>
+              <source src="assets/media/video2.mp4" type="video/mp4">
+              Tu navegador no soporta vídeos HTML5.
+            </video>
+          </div>
+          <div class="p2-video-info">
+            <span class="material-icons-outlined">play_circle</span>
+            <div>
+              <h4>Vídeo 2</h4>
+              <p>Transiciones avanzadas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p2-video-card">
+          <div class="p2-video-wrapper">
+            <!-- TODO: AÑADIR TU VÍDEO AQUÍ -->
+            <!-- Pon tu archivo de vídeo en: assets/media/video3.mp4 -->
+            <video controls>
+              <source src="assets/media/video3.mp4" type="video/mp4">
+              Tu navegador no soporta vídeos HTML5.
+            </video>
+          </div>
+          <div class="p2-video-info">
+            <span class="material-icons-outlined">play_circle</span>
+            <div>
+              <h4>Vídeo 3</h4>
+              <p>Efectos complejos keyframes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Árbol de Navidad con toggle centrado -->
+    <section class="p2-section">
+      <h2 class="p2-section__title">Árbol de Navidad Animado</h2>
+      <p class="p2-section__desc">Estrella que gira controlada con un toggle CSS (sin JavaScript)</p>
+      
+      <div class="p2-christmas-card">
+        <input type="checkbox" id="pauseStar" class="p2-hidden">
+        
+        <div class="p2-christmas-scene">
+          <div class="p2-tree">
+            <div class="p2-tree-top">🌲</div>
+            <div class="p2-tree-trunk"></div>
+            <div class="p2-ornament p2-ornament-1">🔴</div>
+            <div class="p2-ornament p2-ornament-2">🔵</div>
+            <div class="p2-ornament p2-ornament-3">🟡</div>
+            <div class="p2-ornament p2-ornament-4">🟣</div>
+          </div>
+          
+          <div class="p2-star-container">
+            <span class="p2-star-icon">⭐</span>
+          </div>
+        </div>
+        
+        <div class="p2-card-toggle">
+          <label class="p2-wrapper" for="pauseStar">
+            <span class="p2-labelText">Animar Estrella</span>
+            <span class="p2-indicator"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
     <section id="anim" class="p2-section">
-      <h2 class="p2-section__title">Loaders i Animacions Complexes</h2>
-      <p class="p2-section__desc">Exemples d'animacions creades només amb CSS utilitzant @keyframes</p>
+      <h2 class="p2-section__title">Loaders y Animaciones</h2>
+      <p class="p2-section__desc">@keyframes con diferentes propiedades e iteraciones</p>
       
       <div class="p2-grid">
         
-        <!-- Loader 1: Rotació infinita -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-loader p2-loader--spin"></div>
           </div>
           <div class="p2-card__info">
-            <h3>Loader Rotació</h3>
-            <p>Animació: <code>spin</code></p>
+            <h3>Loader Spin</h3>
+            <p>Animación: <code>spin</code></p>
             <p>Timing: <code>linear</code></p>
-            <p>Iteracions: <code>infinite</code></p>
+            <p>Iteraciones: <code>infinite</code></p>
           </div>
         </div>
 
-        <!-- Loader 2: Pulse -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-loader p2-loader--pulse"></div>
           </div>
           <div class="p2-card__info">
             <h3>Loader Pulse</h3>
-            <p>Animació: <code>pulse</code></p>
+            <p>Animación: <code>pulse</code></p>
             <p>Timing: <code>ease-in-out</code></p>
-            <p>Iteracions: <code>infinite</code></p>
+            <p>Iteraciones: <code>infinite</code></p>
           </div>
         </div>
 
-        <!-- Loader 3: Dots -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-loader p2-loader--dots">
@@ -123,26 +186,23 @@
           </div>
           <div class="p2-card__info">
             <h3>Loader Dots</h3>
-            <p>Animació: <code>bounce</code></p>
-            <p>Timing: <code>ease-in-out</code></p>
-            <p>Delay: <code>0s, 0.2s, 0.4s</code></p>
+            <p>Animación: <code>bounce</code></p>
+            <p>Delay: <code>0.2s, 0.4s</code></p>
+            <p>Iteraciones: <code>infinite</code></p>
           </div>
         </div>
 
-        <!-- Animació complexa 1: Transform + Opacity + Color -->
         <div class="p2-card p2-card--wide">
           <div class="p2-card__demo">
             <div class="p2-animated p2-animated--complex"></div>
           </div>
           <div class="p2-card__info">
-            <h3>Animació Complexa</h3>
-            <p>Propietats: <code>transform</code>, <code>opacity</code>, <code>background</code></p>
-            <p>Timing: <code>ease-in-out</code></p>
-            <p>Direcció: <code>alternate</code> + <code>infinite</code></p>
+            <h3>Animación Compleja</h3>
+            <p>Props: <code>transform</code> + <code>opacity</code> + <code>background</code></p>
+            <p>Dirección: <code>alternate</code> + <code>infinite</code></p>
           </div>
         </div>
 
-        <!-- Animació 2: Rotation + Scale -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-animated p2-animated--rotate">
@@ -150,13 +210,12 @@
             </div>
           </div>
           <div class="p2-card__info">
-            <h3>Rotació + Escala</h3>
-            <p>Animació: <code>rotateScale</code></p>
-            <p>Iteracions: <code>infinite</code></p>
+            <h3>Rotación + Escala</h3>
+            <p>Animación: <code>rotateScale</code></p>
+            <p>Iteraciones: <code>infinite</code></p>
           </div>
         </div>
 
-        <!-- Animació 3: Bounce -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-animated p2-animated--bounce">
@@ -164,13 +223,12 @@
             </div>
           </div>
           <div class="p2-card__info">
-            <h3>Efecte Bounce</h3>
-            <p>Animació: <code>bounceVertical</code></p>
+            <h3>Bounce Vertical</h3>
+            <p>Animación: <code>bounceVertical</code></p>
             <p>Timing: <code>cubic-bezier</code></p>
           </div>
         </div>
 
-        <!-- Animació 4: Float -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-animated p2-animated--float">
@@ -178,13 +236,12 @@
             </div>
           </div>
           <div class="p2-card__info">
-            <h3>Efecte Float</h3>
-            <p>Animació: <code>floating</code></p>
-            <p>Direcció: <code>alternate</code></p>
+            <h3>Float</h3>
+            <p>Dirección: <code>alternate</code></p>
+            <p>Timing: <code>ease-in-out</code></p>
           </div>
         </div>
 
-        <!-- Animació 5: Shake -->
         <div class="p2-card">
           <div class="p2-card__demo">
             <div class="p2-animated p2-animated--shake">
@@ -192,75 +249,20 @@
             </div>
           </div>
           <div class="p2-card__info">
-            <h3>Efecte Shake</h3>
-            <p>Animació: <code>shake</code></p>
+            <h3>Shake</h3>
             <p>Timing: <code>ease-in-out</code></p>
+            <p>Iteraciones: <code>infinite</code></p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Secció Scroll Reveal millorada amb més elements -->
-    <section class="p2-section p2-section--scroll">
-      <h2 class="p2-section__title">Scroll Reveal amb animation-timeline: view()</h2>
-      <p class="p2-section__desc">Desplaça't cap avall per veure com els elements apareixen progressivament quan entren al viewport</p>
-      
-      <div class="p2-scroll-container">
-        
-        <div class="p2-scroll-item p2-scroll-item--1">
-          <div class="p2-scroll-item__icon">
-            <span class="material-icons-outlined">rocket_launch</span>
-          </div>
-          <h3>Primer Element Animat</h3>
-          <p>Aquesta animació utilitza <code>animation-timeline: view()</code> per activar-se automàticament quan l'element entra al viewport. És una característica moderna de CSS que permet crear efectes de scroll sense JavaScript.</p>
-        </div>
+    <!-- ELIMINADA SECCIÓN DE SCROLL REVEAL -->
 
-        <div class="p2-scroll-item p2-scroll-item--2">
-          <div class="p2-scroll-item__icon">
-            <span class="material-icons-outlined">auto_awesome</span>
-          </div>
-          <h3>Segon Element Animat</h3>
-          <p>Cada element apareix amb un efecte diferent: fade-in, desplaçament vertical, escala i rotació. L'animació s'activa progressivament a mesura que fas scroll per la pàgina.</p>
-        </div>
-
-        <div class="p2-scroll-item p2-scroll-item--3">
-          <div class="p2-scroll-item__icon">
-            <span class="material-icons-outlined">visibility</span>
-          </div>
-          <h3>Tercer Element Animat</h3>
-          <p>L'atribut <code>animation-range</code> permet controlar quan comença i acaba l'animació durant el scroll. En aquest cas, comença quan l'element entra al viewport (entry 0%) i acaba al 30% (cover 30%).</p>
-        </div>
-
-        <div class="p2-scroll-item p2-scroll-item--4">
-          <div class="p2-scroll-item__icon">
-            <span class="material-icons-outlined">bolt</span>
-          </div>
-          <h3>Quart Element Animat</h3>
-          <p>Aquest efecte combina múltiples transformacions: translateY per al desplaçament vertical, scale per l'escala inicial i opacity per la transparència. Tot això es coordina amb <code>@keyframes</code>.</p>
-        </div>
-
-        <div class="p2-scroll-item p2-scroll-item--5">
-          <div class="p2-scroll-item__icon">
-            <span class="material-icons-outlined">check_circle</span>
-          </div>
-          <h3>Cinquè Element Animat</h3>
-          <p>Per a navegadors que no suporten <code>animation-timeline: view()</code>, hi ha un fallback implementat amb <code>@supports not</code> que aplica una animació tradicional amb delay progressiu.</p>
-        </div>
-
-      </div>
-
-      <div class="p2-fallback-notice">
-        <span class="material-icons-outlined">info</span>
-        <p>Fallback implementat amb <code>@supports not (animation-timeline: view())</code> per garantir compatibilitat amb tots els navegadors.</p>
-      </div>
-
-    </section>
-
-    <!-- Nova secció amb grid d'icones animades -->
     <section class="p2-section">
-      <h2 class="p2-section__title">Icones Animades</h2>
-      <p class="p2-section__desc">Material Icons amb diferents animacions al hover</p>
+      <h2 class="p2-section__title">Iconos Animados</h2>
+      <p class="p2-section__desc">Material Icons con efectos hover</p>
       
       <div class="p2-icons-grid">
         <div class="p2-icon-item">
@@ -293,9 +295,8 @@
   </main>
 
   <footer class="p2-footer">
-    <p>DAM1M04 - Exercici 005 · Animacions CSS · 2025</p>
+    <p>DAM1M04 - Ejercicio 005 · 2025</p>
   </footer>
 
 </body>
 </html>
-

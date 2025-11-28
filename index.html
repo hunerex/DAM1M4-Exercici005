@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pàgina 1 · Transicions</title>
+  <title>Página 1 · Transiciones</title>
   <link rel="stylesheet" href="estils.css">
-  <!-- Fonts + Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,60 +12,57 @@
 </head>
 <body class="p1-page">
 
-  <!-- Navbar actualitzat amb millor disseny -->
+  <!-- Navbar sticky con enlaces corregidos -->
   <header class="p1-navbar">
     <div class="p1-navbar__inner">
       <div class="p1-navbar__brand">
         <span class="material-icons-outlined">layers</span>
-        <span>DAM · Exercici 005</span>
+        <span class="p1-navbar__brand-text">DAM</span>
       </div>
 
       <nav class="p1-navbar__links">
         <a href="index.html" class="p1-navbar__link p1-navbar__link--active">
-          <span class="material-icons-outlined">home</span> Home
+          <span class="material-icons-outlined">home</span>
+          <span class="p1-navbar__text">Inicio</span>
         </a>
         <a href="galeria.html" class="p1-navbar__link">
-          <span class="material-icons-outlined">movie</span> Galeria
+          <span class="material-icons-outlined">movie</span>
+          <span class="p1-navbar__text">Galería</span>
         </a>
         <a href="guia-estil.html" class="p1-navbar__link">
-          <span class="material-icons-outlined">format_size</span> Guia d'estil
+          <span class="material-icons-outlined">format_size</span>
+          <span class="p1-navbar__text">Guía</span>
         </a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- Hero més impactant amb millor disseny -->
+    <!-- Traducción a español del hero -->
     <section class="p1-hero">
       <div class="p1-hero__badge">
         <span class="material-icons-outlined">auto_awesome</span>
-        Transicions CSS Avançades
+        Transiciones CSS
       </div>
-      <h1 class="p1-hero__title">Descobreix el Poder de les Transicions</h1>
+      <h1 class="p1-hero__title">Transiciones</h1>
       <p class="p1-hero__subtitle">
-        Explora com les transicions CSS poden transformar elements estàtics en experiències interactives fluides. 
-        Cada targeta utilitza diferents timing-functions i propietats per demostrar la versatilitat de les transicions.
+        Explora las transiciones CSS con diferentes timing-functions y propiedades interactivas.
       </p>
       <div class="p1-hero__buttons">
         <a href="#p1-cards" class="p1-hero__cta p1-hero__cta--primary">
           <span class="material-icons-outlined">play_arrow</span>
-          Explorar transicions
-        </a>
-        <a href="#p1-menu" class="p1-hero__cta p1-hero__cta--secondary">
-          <span class="material-icons-outlined">info</span>
-          Més informació
+          Explorar
         </a>
       </div>
     </section>
 
-    <!-- Secció de targetes completament redissenyada amb 6 targetes interactives -->
+    <!-- Traducción a español de las tarjetas -->
     <section id="p1-cards" class="p1-section">
-      <h2 class="p1-section__title">Targetes amb Diferents Timing Functions</h2>
-      <p class="p1-section__desc">Passa el cursor per sobre de cada targeta per veure diferents efectes de transició</p>
+      <h2 class="p1-section__title">Tarjetas con Timing Functions</h2>
+      <p class="p1-section__desc">Pasa el cursor para ver diferentes efectos de transición</p>
       
       <div class="p1-cards__grid">
         
-        <!-- Card 1: ease-in-out amb rotació 3D i flip -->
         <div class="p1-card p1-card--flip">
           <div class="p1-card__inner">
             <div class="p1-card__front">
@@ -74,48 +70,49 @@
                 <span class="material-icons-outlined">360</span>
               </div>
               <h3>ease-in-out</h3>
-              <p>Rotació 3D</p>
+              <p>Rotación 3D suave con aceleración inicial y desaceleración final</p>
               <div class="p1-card__badge">0.8s</div>
             </div>
             <div class="p1-card__back">
-              <h3>Rotació Completa</h3>
-              <p>Aquesta targeta fa servir <code>rotateY(180deg)</code> amb timing ease-in-out per una transició suau</p>
+              <h3>Rotación completa</h3>
+              <p>Usa <code>rotateY(180deg)</code> y <code>transform-style: preserve-3d</code></p>
             </div>
           </div>
         </div>
 
-        <!-- Card 2: cubic-bezier Material Design -->
         <div class="p1-card p1-card--lift">
           <div class="p1-card__image-wrap">
-            <img src="/assets/img/card2.jpg" alt="Gradient modern" class="p1-card__image">
+            <!-- TODO: AÑADIR IMAGEN AQUÍ -->
+            <!-- Pon tu imagen en: assets/img/card1.jpg -->
+            <img src="assets/img/card1.jpg" alt="Design" class="p1-card__image">
           </div>
           <div class="p1-card__content">
             <div class="p1-card__icon">
               <span class="material-icons-outlined">trending_up</span>
             </div>
             <h3>cubic-bezier</h3>
-            <p>Material Design</p>
+            <p>Elevación con timing personalizado tipo Material Design</p>
             <div class="p1-card__badge">0.42s</div>
           </div>
         </div>
 
-        <!-- Card 3: ease-out amb crossfade d'imatges -->
         <div class="p1-card p1-card--crossfade">
           <div class="p1-card__image-stack">
-            <img src="/assets/img/card3a.jpg" alt="Abstract 1" class="p1-card__img-base">
-            <img src="/assets/img/card3b.jpg" alt="Abstract 2" class="p1-card__img-hover">
+            <!-- TODO: AÑADIR IMÁGENES AQUÍ -->
+            <!-- Pon tus imágenes en: assets/img/card2.jpg y assets/img/card3.jpg -->
+            <img src="assets/img/card2.jpg" alt="Image 1" class="p1-card__img-base">
+            <img src="assets/img/card3.jpg" alt="Image 2" class="p1-card__img-hover">
           </div>
           <div class="p1-card__content">
             <div class="p1-card__icon">
               <span class="material-icons-outlined">image</span>
             </div>
             <h3>ease-out</h3>
-            <p>Crossfade d'imatges</p>
+            <p>Efecto crossfade entre dos imágenes con desaceleración</p>
             <div class="p1-card__badge">0.35s</div>
           </div>
         </div>
 
-        <!-- Card 4: linear amb escala i ombra -->
         <div class="p1-card p1-card--scale">
           <div class="p1-card__glow"></div>
           <div class="p1-card__content">
@@ -123,12 +120,11 @@
               <span class="material-icons-outlined">zoom_out_map</span>
             </div>
             <h3>linear</h3>
-            <p>Escala constant</p>
+            <p>Escala constante con efecto de resplandor (glow) alrededor</p>
             <div class="p1-card__badge">0.3s</div>
           </div>
         </div>
 
-        <!-- Card 5: ease-in amb color i blur -->
         <div class="p1-card p1-card--blur">
           <div class="p1-card__gradient"></div>
           <div class="p1-card__content">
@@ -136,19 +132,18 @@
               <span class="material-icons-outlined">blur_on</span>
             </div>
             <h3>ease-in</h3>
-            <p>Blur i saturació</p>
+            <p>Desenfoque progresivo con saturación aumentada</p>
             <div class="p1-card__badge">0.5s</div>
           </div>
         </div>
 
-        <!-- Card 6: steps amb animació discreta -->
         <div class="p1-card p1-card--steps">
           <div class="p1-card__content">
             <div class="p1-card__icon p1-card__icon--animated">
               <span class="material-icons-outlined">stairs</span>
             </div>
             <h3>steps(4)</h3>
-            <p>Transició discreta</p>
+            <p>Animación discreta en 4 pasos definidos, sin interpolación</p>
             <div class="p1-card__badge">0.6s</div>
           </div>
           <div class="p1-card__progress"></div>
@@ -157,62 +152,61 @@
       </div>
     </section>
 
-    <!-- Menú secundari millorat amb icones i millors efectes -->
+    <!-- Menú traducido a español -->
     <section id="p1-menu" class="p1-section">
-      <h2 class="p1-section__title">Funcions de Temporització CSS</h2>
-      <p class="p1-section__desc">Navega per les diferents opcions de timing-function disponibles</p>
+      <h2 class="p1-section__title">Funciones de Temporización</h2>
+      <p class="p1-section__desc">Diferentes opciones de timing-function para controlar la velocidad de las animaciones</p>
       
-      <nav class="p1-menu">
-        <a href="#" class="p1-menu__item">
+      <div class="p1-menu">
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">show_chart</span>
           <span class="p1-menu__label">Linear</span>
-          <span class="p1-menu__desc">Velocitat constant</span>
-        </a>
-        <a href="#" class="p1-menu__item">
+          <span class="p1-menu__desc">Velocidad constante durante toda la animación</span>
+        </div>
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">waves</span>
           <span class="p1-menu__label">Ease</span>
-          <span class="p1-menu__desc">Natural i suau</span>
-        </a>
-        <a href="#" class="p1-menu__item">
+          <span class="p1-menu__desc">Transición natural con aceleración y desaceleración</span>
+        </div>
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">trending_up</span>
           <span class="p1-menu__label">Ease-in</span>
-          <span class="p1-menu__desc">Inici lent</span>
-        </a>
-        <a href="#" class="p1-menu__item">
+          <span class="p1-menu__desc">Comienza lento y acelera al final</span>
+        </div>
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">trending_down</span>
           <span class="p1-menu__label">Ease-out</span>
-          <span class="p1-menu__desc">Final lent</span>
-        </a>
-        <a href="#" class="p1-menu__item">
+          <span class="p1-menu__desc">Comienza rápido y desacelera al final</span>
+        </div>
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">timeline</span>
           <span class="p1-menu__label">Ease-in-out</span>
-          <span class="p1-menu__desc">Lent als extrems</span>
-        </a>
-        <a href="#" class="p1-menu__item">
+          <span class="p1-menu__desc">Aceleración al principio y desaceleración al final</span>
+        </div>
+        <div class="p1-menu__item">
           <span class="material-icons-outlined">tune</span>
           <span class="p1-menu__label">Cubic-bezier</span>
-          <span class="p1-menu__desc">Personalitzat</span>
-        </a>
-      </nav>
+          <span class="p1-menu__desc">Curva personalizada con control total</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Nova secció amb botons interactius -->
     <section class="p1-section">
-      <h2 class="p1-section__title">Botons amb Transicions</h2>
-      <p class="p1-section__desc">Exemples de botons amb diferents efectes de transició</p>
+      <h2 class="p1-section__title">Botones con Transiciones</h2>
+      <p class="p1-section__desc">Ejemplos de botones con efectos hover diferentes</p>
       
       <div class="p1-buttons">
         <button class="p1-btn p1-btn--primary">
           <span class="material-icons-outlined">send</span>
-          Enviar missatge
+          Enviar
         </button>
         <button class="p1-btn p1-btn--secondary">
           <span class="material-icons-outlined">download</span>
-          Descarregar
+          Descargar
         </button>
         <button class="p1-btn p1-btn--outline">
           <span class="material-icons-outlined">favorite</span>
-          M'agrada
+          Me gusta
         </button>
         <button class="p1-btn p1-btn--ghost">
           <span class="material-icons-outlined">share</span>
@@ -224,12 +218,8 @@
   </main>
 
   <footer class="p1-footer">
-    <p>DAM1M04 - Exercici 005 · Transicions CSS · 2025</p>
+    <p>DAM1M04 - Ejercicio 005 · 2025</p>
   </footer>
 
 </body>
 </html>
-
-
-
-
